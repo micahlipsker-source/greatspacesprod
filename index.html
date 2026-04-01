@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///C:/Users/theli/Downloads/greatspaces-final%20(36).html#locations -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Great Spaces New Haven</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Great Spaces New Haven_files/css2" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --black:#0c0c0c; --dark:#141414; --border:#222; --gray:#555; --light:#999; --white:#f0f0f0; }
+html { scroll-behavior: smooth; }
+body { background: var(--black); color: var(--white); font-family: "DM Sans", sans-serif; }
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 5%; height: 60px; background: rgba(12,12,12,0.97); border-bottom: 1px solid var(--border); }
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo-bars-icon {
+  display: flex; align-items: flex-end; gap: 3px; height: 22px;
+}
+.logo-bars-icon span {
+  display: block; width: 4px; border-radius: 2px;
+}
+.lbi1 { height: 9px;  background: #555; }
+.lbi2 { height: 16px; background: #999; }
+.lbi3 { height: 22px; background: #fff; }
+.lbi4 { height: 13px; background: #777; }
+.lbi5 { height: 8px;  background: #444; }
+.logo-wordmark { font-family: "Syne", sans-serif; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.06em; color: var(--white); text-transform: uppercase; }
+.logo-wordmark small { display: block; font-size: 0.44rem; font-weight: 400; letter-spacing: 0.24em; color: var(--gray); text-transform: uppercase; margin-top: 1px; }
+.nav-contact { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray); text-decoration: none; border: 1px solid var(--border); padding: 0.42rem 1rem; border-radius: 2px; transition: color 0.2s, border-color 0.2s; }
+.nav-contact:hover { color: var(--white); border-color: #444; }
+
+#hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 5% 8vh; position: relative; overflow: hidden; }
+.hero-line { position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: var(--border); }
+#hero h1 { font-family: "Syne", sans-serif; font-size: clamp(4.5rem, 12vw, 10rem); font-weight: 700; line-height: 0.92; letter-spacing: -0.02em; color: var(--white); position: relative; }
+.hero-row { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 2rem; position: relative; margin-top: 3rem; }
+.hero-desc { font-size: 1.15rem; font-weight: 300; color: var(--white); line-height: 1.85; max-width: 480px; }
+.hero-ctas { display: flex; gap: 0.75rem; }
+.btn-primary { display: inline-block; padding: 0.78rem 2rem; background: var(--white); color: var(--black); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: opacity 0.2s; }
+.btn-primary:hover { opacity: 0.8; }
+.btn-secondary { display: inline-block; padding: 0.78rem 2rem; border: 1px solid var(--border); color: var(--gray); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: border-color 0.2s, color 0.2s; }
+.btn-secondary:hover { border-color: #444; color: var(--white); }
+
+.section-divider { padding: 1.25rem 5%; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap; gap: 2rem; }
+.divider-item { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+.divider-item strong { color: var(--light); font-weight: 400; }
+
+#photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; background: var(--black); }
+.pc { overflow: hidden; aspect-ratio: 4/3; }
+.pc img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.85) saturate(0.88); transition: transform 0.6s ease, filter 0.4s; }
+.pc:hover img { transform: scale(1.04); filter: brightness(1) saturate(1); }
+
+#contact { padding: 120px 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 8rem; align-items: start; border-top: 1px solid var(--border); }
+.contact-left h2 { font-family: "Syne", sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1; margin-bottom: 1.5rem; color: var(--white); }
+.contact-left p { font-size: 0.83rem; font-weight: 300; color: var(--gray); line-height: 1.9; margin-bottom: 3rem; max-width: 300px; }
+.contact-links { display: flex; flex-direction: column; }
+.contact-link { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--light); font-size: 0.82rem; font-weight: 300; transition: color 0.2s; }
+.contact-link:first-child { border-top: 1px solid var(--border); }
+.contact-link:hover { color: var(--white); }
+.contact-link span { font-size: 0.6rem; color: var(--gray); letter-spacing: 0.14em; text-transform: uppercase; }
+.arrow { font-size: 0.7rem; color: var(--gray); opacity: 0; transition: opacity 0.2s; }
+.contact-link:hover .arrow { opacity: 1; }
+
+.contact-form { display: flex; flex-direction: column; }
+.form-field { padding: 1.1rem 0; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+.form-field:first-child { border-top: 1px solid var(--border); }
+.form-field label { font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray); }
+.form-field input, .form-field textarea, .form-field select { background: transparent; border: none; outline: none; color: var(--white); font-family: "DM Sans", sans-serif; font-size: 0.88rem; font-weight: 300; width: 100%; }
+.form-field input::placeholder, .form-field textarea::placeholder { color: #2a2a2a; }
+.form-field select option { background: #111; }
+.form-field textarea { resize: none; height: 80px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.btn-send { margin-top: 2rem; background: var(--white); color: var(--black); border: none; padding: 1rem 0; width: 100%; font-family: "DM Sans", sans-serif; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: opacity 0.2s; }
+.btn-send:hover { opacity: 0.82; }
+#success { display: none; margin-top: 1.5rem; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #555; }
+
+footer { padding: 2rem 5%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid var(--border); }
+.footer-links { display: flex; gap: 2.5rem; list-style: none; }
+.footer-links a { color: var(--gray); text-decoration: none; font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; transition: color 0.2s; }
+.footer-links a:hover { color: var(--light); }
+.footer-copy { font-size: 0.65rem; color: #2a2a2a; }
+
+@media (max-width: 768px) {
+  #photos { grid-template-columns: 1fr 1fr; }
+  #contact { grid-template-columns: 1fr; gap: 4rem; padding: 80px 5%; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  nav { padding: 0 4%; height: 54px; }
+  .logo-wordmark { font-size: 0.82rem; }
+  .logo-wordmark small { font-size: 0.4rem; }
+  .nav-contact { font-size: 0.6rem; padding: 0.35rem 0.75rem; }
+  #hero { min-height: 85vh; padding: 0 5% 6vh; }
+  #hero h1 { font-size: clamp(3rem, 14vw, 5rem); }
+  .hero-row { flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+  .hero-desc { font-size: 0.95rem; line-height: 1.7; max-width: 100%; }
+  .hero-ctas { flex-direction: column; width: 100%; }
+  .hero-ctas a { text-align: center; width: 100%; }
+  .section-divider { padding: 1rem 4%; gap: 1rem; flex-wrap: wrap; }
+  .divider-item { font-size: 0.55rem; }
+  #locations { padding: 60px 4% !important; }
+  .loc-card { min-height: 140px; padding: 1.5rem 1rem; }
+  .loc-addr { font-size: 1rem !important; }
+  .loc-num { font-size: 0.58rem; }
+  .loc-city { font-size: 0.68rem; }
+  .contact-left h2 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+  .contact-left p { max-width: 100%; }
+  footer { padding: 1.5rem 4%; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .footer-links { gap: 1.5rem; flex-wrap: wrap; }
+  .locations-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 500px) {
+  #photos { grid-template-columns: 1fr; }
+  .hero-desc { font-size: 0.88rem; }
+  .locations-grid { grid-template-columns: 1fr !important; }
+}
+
+.loc-card {
+  background: var(--dark);
+  padding: 2.5rem 2rem;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+  text-align: center;
+  transition: background 0.2s;
+  min-height: 180px;
+}
+.loc-card:hover { background: #1a1a1a; }
+.loc-num {
+  font-family: "Syne", sans-serif;
+  font-size: 0.65rem; letter-spacing: 0.2em;
+  color: var(--gray); font-weight: 400;
+}
+.loc-addr {
+  font-family: "Syne", sans-serif;
+  font-size: 1.3rem; font-weight: 700;
+  letter-spacing: -0.01em; color: var(--white);
+  line-height: 1.1;
+}
+.loc-city {
+  font-size: 0.75rem; color: var(--white);
+  font-weight: 300; letter-spacing: 0.06em;
+}
+
+/* === 261 Bradley View Toggle === */
+#bradley-view { display: none; }
+#bradley-view.active { display: block; }
+#home-view.hidden { display: none; }
+#bradley-view .bradley-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 48px;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+#bradley-view .bradley-nav .nav-logo { display: flex; align-items: center; gap: 10px; }
+#bradley-view .bradley-nav .nav-logo-svg { display: block; height: 60px; width: auto; }
+#bradley-view .nav-back {
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.1); padding: 8px 18px;
+  text-decoration: none; transition: color 0.2s, border-color 0.2s;
+  cursor: pointer; background: none;
+}
+#bradley-view .nav-back:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+#bradley-view .header { padding: 120px 48px 64px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+#bradley-view .header-title { font-family: 'Barlow', sans-serif; font-size: clamp(4rem, 9vw, 9.5rem); font-weight: 900; line-height: 0.9; letter-spacing: -0.02em; margin-bottom: 48px; }
+#bradley-view .header-meta { display: flex; gap: 64px; flex-wrap: wrap; }
+#bradley-view .header-meta-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 6px; }
+#bradley-view .header-meta-value { font-size: 0.95rem; font-weight: 400; color: #fff; }
+#bradley-view .tabs-wrapper { position: sticky; top: 69px; z-index: 400; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+#bradley-view .tabs-wrapper::-webkit-scrollbar { display: none; }
+#bradley-view .tabs { display: flex; align-items: stretch; min-width: max-content; }
+#bradley-view .tab-btn { padding: 20px 32px; font-family: 'Barlow', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.2s, border-color 0.2s; white-space: nowrap; }
+#bradley-view .tab-btn:hover { color: rgba(255,255,255,0.75); }
+#bradley-view .tab-btn.active { color: #fff; border-bottom-color: #fff; }
+#bradley-view .tab-sub { display: block; font-size: 0.55rem; font-weight: 400; letter-spacing: 0.14em; color: rgba(255,255,255,0.4); margin-top: 3px; text-transform: uppercase; }
+#bradley-view .tab-btn.active .tab-sub { color: rgba(255,255,255,0.55); }
+#bradley-view .panels-area { min-height: 60vh; }
+#bradley-view .apt-panel { display: none; }
+#bradley-view .apt-panel.active { display: block; }
+#bradley-view .apt-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 320px; grid-auto-flow: row dense; gap: 3px; background: #000; }
+#bradley-view .apt-grid-cell { overflow: hidden; position: relative; background: linear-gradient(90deg, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%); background-size: 200% 100%; animation: bradshimmer 1.5s infinite; cursor: pointer; }
+#bradley-view .apt-grid-cell.wide { grid-column: span 2; }
+#bradley-view .apt-grid-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); animation: none; }
+#bradley-view .apt-grid-cell:hover img { transform: scale(1.04); }
+#bradley-view .apt-grid-cell.floor-plan { background: #fff; }
+#bradley-view .apt-grid-cell.floor-plan img { object-fit: contain; transform: none !important; }
+#bradley-view .apt-grid-cell.floor-plan:hover img { transform: none !important; }
+#bradley-view .apt-grid-cell.blur-cell { overflow: hidden; }
+#bradley-view .apt-grid-cell.blur-cell .blur-bg { position: absolute; inset: -20px; background-size: cover; background-position: center; filter: blur(18px); transform: scale(1.1); z-index: 0; }
+#bradley-view .apt-grid-cell.blur-cell img { position: relative; z-index: 1; object-fit: contain !important; width: 100%; height: 100%; }
+#bradley-view .apt-grid-cell.blur-cell:hover img { transform: none !important; }
+#bradley-view .lightbox { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.97); align-items: center; justify-content: center; }
+#bradley-view .lightbox.open { display: flex; }
+#bradley-view .lightbox img { width: auto; height: auto; max-width: 90vw; max-height: 90vh; display: block; object-fit: contain; }
+#bradley-view .lb-close { position: absolute; top: 24px; right: 32px; font-size: 1.8rem; color: rgba(255,255,255,0.4); cursor: pointer; background: none; border: none; line-height: 1; transition: color 0.2s; font-weight: 200; }
+#bradley-view .lb-close:hover { color: #fff; }
+#bradley-view .lb-prev, #bradley-view .lb-next { position: absolute; top: 50%; transform: translateY(-50%); background: none; border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 16px 20px; font-size: 1.2rem; cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+#bradley-view .lb-prev { left: 24px; }
+#bradley-view .lb-next { right: 24px; }
+#bradley-view .lb-prev:hover, #bradley-view .lb-next:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.3); }
+#bradley-view .lb-counter { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+@keyframes bradshimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+#bradley-view .apt-grid-cell img[src^="img_"] { display: none; }
+#bradley-view .apt-grid-cell:has(img[src^="img_"]) { display: none; }
+@media (max-width: 768px) {
+  #bradley-view .bradley-nav { padding: 18px 20px; }
+  #bradley-view .header { padding: 100px 20px 48px; }
+  #bradley-view .header-meta { gap: 32px; }
+  #bradley-view .apt-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
+  #bradley-view .apt-grid-cell.wide { grid-column: span 2; }
+  #bradley-view .tab-btn { padding: 18px 20px; font-size: 0.62rem; }
+}
+@media (max-width: 500px) {
+  #bradley-view .apt-grid { grid-template-columns: 1fr; grid-auto-rows: 240px; }
+  #bradley-view .apt-grid-cell.wide { grid-column: span 1; }
+  #bradley-view .header-title { letter-spacing: -0.01em; }
+}
+
+/* === 495 Orange View Toggle === */
+#orange-view { display: none; }
+#orange-view.active { display: block; }
+#orange-view .orange-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 48px;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+#orange-view .orange-nav .nav-logo { display: flex; align-items: center; gap: 10px; }
+#orange-view .orange-nav .nav-logo-svg { display: block; height: 60px; width: auto; }
+#orange-view .nav-back {
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.1); padding: 8px 18px;
+  text-decoration: none; transition: color 0.2s, border-color 0.2s;
+  cursor: pointer; background: none;
+}
+#orange-view .nav-back:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+#orange-view .header { padding: 120px 48px 64px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+#orange-view .header-title { font-family: 'Barlow', sans-serif; font-size: clamp(4rem, 9vw, 9.5rem); font-weight: 900; line-height: 0.9; letter-spacing: -0.02em; margin-bottom: 48px; }
+#orange-view .header-meta { display: flex; gap: 64px; flex-wrap: wrap; }
+#orange-view .header-meta-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 6px; }
+#orange-view .header-meta-value { font-size: 0.95rem; font-weight: 400; color: #fff; }
+#orange-view .tabs-wrapper { position: sticky; top: 69px; z-index: 400; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+#orange-view .tabs-wrapper::-webkit-scrollbar { display: none; }
+#orange-view .tabs { display: flex; align-items: stretch; min-width: max-content; }
+#orange-view .tab-btn { padding: 20px 32px; font-family: 'Barlow', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.2s, border-color 0.2s; white-space: nowrap; }
+#orange-view .tab-btn:hover { color: rgba(255,255,255,0.75); }
+#orange-view .tab-btn.active { color: #fff; border-bottom-color: #fff; }
+#orange-view .tab-sub { display: block; font-size: 0.55rem; font-weight: 400; letter-spacing: 0.14em; color: rgba(255,255,255,0.4); margin-top: 3px; text-transform: uppercase; }
+#orange-view .tab-btn.active .tab-sub { color: rgba(255,255,255,0.55); }
+#orange-view .panels-area { min-height: 60vh; }
+#orange-view .apt-panel { display: none; }
+#orange-view .apt-panel.active { display: block; }
+#orange-view .apt-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 320px; grid-auto-flow: row dense; gap: 3px; background: #000; }
+#orange-view .apt-grid-cell { overflow: hidden; position: relative; background: linear-gradient(90deg, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%); background-size: 200% 100%; animation: orangeshimmer 1.5s infinite; cursor: pointer; }
+#orange-view .apt-grid-cell.wide { grid-column: span 2; }
+#orange-view .apt-grid-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); animation: none; }
+#orange-view .apt-grid-cell:hover img { transform: scale(1.04); }
+#orange-view .apt-grid-cell.floor-plan { background: #fff; }
+#orange-view .apt-grid-cell.floor-plan img { object-fit: contain; transform: none !important; }
+#orange-view .apt-grid-cell.floor-plan:hover img { transform: none !important; }
+#orange-view .apt-grid-cell.blur-cell { overflow: hidden; }
+#orange-view .apt-grid-cell.blur-cell .blur-bg { position: absolute; inset: -20px; background-size: cover; background-position: center; filter: blur(18px); transform: scale(1.1); z-index: 0; }
+#orange-view .apt-grid-cell.blur-cell img { position: relative; z-index: 1; object-fit: contain !important; width: 100%; height: 100%; }
+#orange-view .apt-grid-cell.blur-cell:hover img { transform: none !important; }
+#orange-view .lightbox { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.97); align-items: center; justify-content: center; }
+#orange-view .lightbox.open { display: flex; }
+#orange-view .lightbox img { width: auto; height: auto; max-width: 90vw; max-height: 90vh; display: block; object-fit: contain; }
+#orange-view .lb-close { position: absolute; top: 24px; right: 32px; font-size: 1.8rem; color: rgba(255,255,255,0.4); cursor: pointer; background: none; border: none; line-height: 1; transition: color 0.2s; font-weight: 200; }
+#orange-view .lb-close:hover { color: #fff; }
+#orange-view .lb-prev, #orange-view .lb-next { position: absolute; top: 50%; transform: translateY(-50%); background: none; border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 16px 20px; font-size: 1.2rem; cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+#orange-view .lb-prev { left: 24px; }
+#orange-view .lb-next { right: 24px; }
+#orange-view .lb-prev:hover, #orange-view .lb-next:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.3); }
+#orange-view .lb-counter { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+@keyframes orangeshimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+#orange-view .apt-grid-cell img[src^="img_"] { display: none; }
+#orange-view .apt-grid-cell:has(img[src^="img_"]) { display: none; }
+@media (max-width: 768px) {
+  #orange-view .orange-nav { padding: 18px 20px; }
+  #orange-view .header { padding: 100px 20px 48px; }
+  #orange-view .header-meta { gap: 32px; }
+  #orange-view .apt-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
+  #orange-view .apt-grid-cell.wide { grid-column: span 2; }
+  #orange-view .tab-btn { padding: 18px 20px; font-size: 0.62rem; }
+}
+@media (max-width: 500px) {
+  #orange-view .apt-grid { grid-template-columns: 1fr; grid-auto-rows: 240px; }
+  #orange-view .apt-grid-cell.wide { grid-column: span 1; }
+  #orange-view .header-title { letter-spacing: -0.01em; }
+}
+
+
+/* === 265 Orange View Toggle === */
+#orange265-view { display: none; }
+#orange265-view.active { display: block; }
+#orange265-view .orange265-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 48px;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+#orange265-view .orange265-nav .nav-logo { display: flex; align-items: center; gap: 10px; }
+#orange265-view .orange265-nav .nav-logo-svg { display: block; height: 60px; width: auto; }
+#orange265-view .nav-back {
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.1); padding: 8px 18px;
+  text-decoration: none; transition: color 0.2s, border-color 0.2s;
+  cursor: pointer; background: none;
+}
+#orange265-view .nav-back:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+#orange265-view .header { padding: 120px 48px 64px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+#orange265-view .header-title { font-family: 'Barlow', sans-serif; font-size: clamp(4rem, 9vw, 9.5rem); font-weight: 900; line-height: 0.9; letter-spacing: -0.02em; margin-bottom: 48px; }
+#orange265-view .header-meta { display: flex; gap: 64px; flex-wrap: wrap; }
+#orange265-view .header-meta-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 6px; }
+#orange265-view .header-meta-value { font-size: 0.95rem; font-weight: 400; color: #fff; }
+#orange265-view .tabs-wrapper { position: sticky; top: 69px; z-index: 400; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+#orange265-view .tabs-wrapper::-webkit-scrollbar { display: none; }
+#orange265-view .tabs { display: flex; align-items: stretch; min-width: max-content; }
+#orange265-view .tab-btn { padding: 20px 32px; font-family: 'Barlow', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.2s, border-color 0.2s; white-space: nowrap; }
+#orange265-view .tab-btn:hover { color: rgba(255,255,255,0.75); }
+#orange265-view .tab-btn.active { color: #fff; border-bottom-color: #fff; }
+#orange265-view .tab-sub { display: block; font-size: 0.55rem; font-weight: 400; letter-spacing: 0.14em; color: rgba(255,255,255,0.4); margin-top: 3px; text-transform: uppercase; }
+#orange265-view .tab-btn.active .tab-sub { color: rgba(255,255,255,0.55); }
+#orange265-view .panels-area { min-height: 60vh; }
+#orange265-view .apt-panel { display: none; }
+#orange265-view .apt-panel.active { display: block; }
+#orange265-view .apt-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 320px; grid-auto-flow: row dense; gap: 3px; background: #000; }
+#orange265-view .apt-grid-cell { overflow: hidden; position: relative; background: linear-gradient(90deg, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%); background-size: 200% 100%; animation: o265shimmer 1.5s infinite; cursor: pointer; }
+#orange265-view .apt-grid-cell.wide { grid-column: span 2; }
+#orange265-view .apt-grid-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); animation: none; }
+#orange265-view .apt-grid-cell:hover img { transform: scale(1.04); }
+#orange265-view .apt-grid-cell.blur-cell { overflow: hidden; }
+#orange265-view .apt-grid-cell.blur-cell .blur-bg { position: absolute; inset: -20px; background-size: cover; background-position: center; filter: blur(18px); transform: scale(1.1); z-index: 0; }
+#orange265-view .apt-grid-cell.blur-cell img { position: relative; z-index: 1; object-fit: contain !important; width: 100%; height: 100%; }
+#orange265-view .apt-grid-cell.blur-cell:hover img { transform: none !important; }
+#orange265-view .lightbox { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.97); align-items: center; justify-content: center; }
+#orange265-view .lightbox.open { display: flex; }
+#orange265-view .lightbox img { width: auto; height: auto; max-width: 90vw; max-height: 90vh; display: block; object-fit: contain; }
+#orange265-view .lb-close { position: absolute; top: 24px; right: 32px; font-size: 1.8rem; color: rgba(255,255,255,0.4); cursor: pointer; background: none; border: none; line-height: 1; transition: color 0.2s; font-weight: 200; }
+#orange265-view .lb-close:hover { color: #fff; }
+#orange265-view .lb-prev, #orange265-view .lb-next { position: absolute; top: 50%; transform: translateY(-50%); background: none; border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 16px 20px; font-size: 1.2rem; cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+#orange265-view .lb-prev { left: 24px; }
+#orange265-view .lb-next { right: 24px; }
+#orange265-view .lb-prev:hover, #orange265-view .lb-next:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.3); }
+#orange265-view .lb-counter { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+@keyframes o265shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@media (max-width: 768px) {
+  #orange265-view .orange265-nav { padding: 18px 20px; }
+  #orange265-view .header { padding: 100px 20px 48px; }
+  #orange265-view .header-meta { gap: 32px; }
+  #orange265-view .apt-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
+  #orange265-view .apt-grid-cell.wide { grid-column: span 2; }
+  #orange265-view .tab-btn { padding: 18px 20px; font-size: 0.62rem; }
+}
+@media (max-width: 500px) {
+  #orange265-view .apt-grid { grid-template-columns: 1fr; grid-auto-rows: 240px; }
+  #orange265-view .apt-grid-cell.wide { grid-column: span 1; }
+  #orange265-view .header-title { letter-spacing: -0.01em; }
+}
+
+/* === 57 Trumbull Street === */
+#trumbull-view { display: none; }
+#trumbull-view.active { display: block; }
+#trumbull-view .trumbull-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%; height: 60px;
+  background: rgba(12,12,12,0.97);
+  border-bottom: 1px solid var(--border);
+}
+#trumbull-view .trumbull-nav .nav-logo { display: flex; align-items: center; gap: 10px; }
+#trumbull-view .trumbull-nav .nav-logo-svg { display: block; height: 60px; width: auto; }
+#trumbull-view .nav-back {
+  font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gray); text-decoration: none; border: 1px solid var(--border);
+  padding: 0.42rem 1rem; border-radius: 2px; transition: color 0.2s, border-color 0.2s;
+  background: none; cursor: pointer;
+}
+#trumbull-view .nav-back:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+
+#trumbull-view .trumbull-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%; height: 60px;
+  background: rgba(12,12,12,0.97);
+  border-bottom: 1px solid var(--border);
+}
+#trumbull-view .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+#trumbull-view .logo-bars { display: flex; align-items: flex-end; gap: 3px; height: 20px; }
+#trumbull-view .logo-bars span { display: block; width: 4px; border-radius: 2px; }
+#trumbull-view .lb1 { height: 9px; background: #555; }
+#trumbull-view .lb2 { height: 14px; background: #999; }
+#trumbull-view .lb3 { height: 20px; background: #fff; }
+#trumbull-view .lb4 { height: 12px; background: #777; }
+#trumbull-view .lb5 { height: 7px; background: #444; }
+#trumbull-view .logo-wordmark { font-family: "Syne", sans-serif; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.06em; color: var(--white); text-transform: uppercase; }
+#trumbull-view .logo-wordmark small { display: block; font-size: 0.44rem; font-weight: 400; letter-spacing: 0.24em; color: var(--gray); text-transform: uppercase; margin-top: 1px; }
+#trumbull-view .nav-back { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray); text-decoration: none; border: 1px solid var(--border); padding: 0.42rem 1rem; border-radius: 2px; transition: color 0.2s, border-color 0.2s; }
+#trumbull-view .nav-back:hover { color: var(--white); border-color: #444; }
+
+#trumbull-view .hero {
+  padding: 120px 5% 80px;
+  border-bottom: 1px solid var(--border);
+}
+#trumbull-view .hero-eyebrow { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--light); display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+#trumbull-view .hero-eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--light); display: inline-block; }
+#trumbull-view .hero h1 { font-family: "Barlow", sans-serif; font-size: clamp(4rem, 9vw, 9.5rem); font-weight: 900; letter-spacing: -0.02em; line-height: 0.9; color: var(--white); margin-bottom: 2rem; }
+#trumbull-view .hero-details { display: flex; gap: 3rem; flex-wrap: wrap; }
+#trumbull-view .detail-item { display: flex; flex-direction: column; gap: 4px; }
+#trumbull-view .detail-label { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+#trumbull-view .detail-value { font-size: 0.95rem; color: var(--white); font-weight: 300; }
+
+#trumbull-view .photo-grid { margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  background: var(--black);
+}
+#trumbull-view .photo-cell { overflow: hidden; height: 380px; display: block; line-height: 0; font-size: 0; }
+#trumbull-view .photo-cell img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.88); transition: transform 0.6s ease, filter 0.4s; vertical-align: top; margin: 0; padding: 0; }
+#trumbull-view .photo-cell:hover img { transform: scale(1.04); filter: brightness(1); }
+
+#trumbull-view .apt-section { padding: 80px 5%; border-top: 1px solid var(--border); }
+#trumbull-view .apt-section h2 { font-family: "Syne", sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.01em; color: var(--white); margin-bottom: 2.5rem; }
+
+#trumbull-view .contact-bar {
+  padding: 60px 5%;
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;
+}
+#trumbull-view .contact-bar h3 { font-family: "Syne", sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--white); }
+#trumbull-view .contact-bar p { font-size: 0.85rem; color: var(--gray); margin-top: 0.4rem; font-weight: 300; }
+#trumbull-view .contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
+#trumbull-view .contact-link { display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--light); font-size: 0.85rem; font-weight: 300; transition: color 0.2s; }
+#trumbull-view .contact-link:hover { color: var(--white); }
+#trumbull-view .contact-link span { font-size: 0.6rem; color: var(--gray); letter-spacing: 0.14em; text-transform: uppercase; min-width: 60px; }
+
+#trumbull-view footer { padding: 2rem 5%; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+#trumbull-view .footer-copy { font-size: 0.65rem; color: #2a2a2a; }
+
+@media (max-width: 768px) {
+  #trumbull-view .photo-grid { margin: 0; padding: 0; grid-template-columns: 1fr; }
+  #trumbull-view .hero-details { gap: 1.5rem; }
+}
+
+#trumbull-view .tab-nav {
+  display: flex; gap: 0;
+  border-bottom: 1px solid var(--border);
+  padding: 0 5%;
+  position: sticky; top: 60px; z-index: 90;
+  background: var(--black);
+}
+#trumbull-view .tab-btn {
+  font-family: "Syne", sans-serif;
+  font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gray);
+  background: none; border: none;
+  padding: 1.1rem 2rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
+}
+#trumbull-view .tab-btn small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.58rem; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gray);
+}
+#trumbull-view .tab-btn.active { color: var(--white); border-bottom-color: var(--white); }
+#trumbull-view .tab-btn.active small { color: #5bb8d4; }
+#trumbull-view .tab-btn:hover { color: var(--light); }
+#trumbull-view .tab-content { display: none; }
+#trumbull-view .tab-content.active { display: block; }
+
+/* Lightbox */
+#trumbull-view .lightbox-overlay {
+  display: none; position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,0.95);
+  align-items: center; justify-content: center;
+  cursor: zoom-out;
+}
+#trumbull-view .lightbox-overlay.open { display: flex; }
+#trumbull-view .lightbox-overlay img {
+  max-width: 92vw; max-height: 92vh;
+  object-fit: contain;
+  border-radius: 2px;
+  cursor: default;
+  box-shadow: 0 0 80px rgba(0,0,0,0.8);
+}
+#trumbull-view .lightbox-close {
+  position: fixed; top: 1.5rem; right: 2rem;
+  color: rgba(255,255,255,0.7); font-size: 2rem;
+  cursor: pointer; z-index: 1001;
+  transition: color 0.2s;
+  background: none; border: none; line-height: 1;
+}
+#trumbull-view .lightbox-close:hover { color: #fff; }
+#trumbull-view .lightbox-prev, #trumbull-view .lightbox-next {
+  position: fixed; top: 50%; transform: translateY(-50%);
+  color: rgba(255,255,255,0.6); font-size: 2rem;
+  cursor: pointer; z-index: 1001;
+  background: none; border: none; padding: 1rem;
+  transition: color 0.2s;
+}
+#trumbull-view .lightbox-prev { left: 1rem; }
+#trumbull-view .lightbox-next { right: 1rem; }
+#trumbull-view .lightbox-prev:hover, #trumbull-view .lightbox-next:hover { color: #fff; }
+#trumbull-view .photo-cell img { cursor: zoom-in; }
+
+/* === Global Mobile Fixes === */
+@media (max-width: 768px) {
+  /* Lightbox mobile - all views */
+  #bradley-view .lb-prev, #bradley-view .lb-next,
+  #orange-view .lb-prev, #orange-view .lb-next { padding: 12px 14px; font-size: 1rem; }
+  #bradley-view .lb-prev, #orange-view .lb-prev { left: 8px; }
+  #bradley-view .lb-next, #orange-view .lb-next { right: 8px; }
+  #bradley-view .lb-close, #orange-view .lb-close { top: 16px; right: 16px; font-size: 1.5rem; }
+  #trumbull-view .lightbox-prev { left: 0.5rem; }
+  #trumbull-view .lightbox-next { right: 0.5rem; }
+  #trumbull-view .lightbox-close { top: 1rem; right: 1rem; }
+
+  /* Trumbull mobile */
+  #trumbull-view .trumbull-nav { padding: 0 4% !important; height: 54px !important; }
+  #trumbull-view .hero { padding: 90px 4% 50px; }
+  #trumbull-view .hero h1 { font-size: clamp(2.5rem, 10vw, 4rem); margin-bottom: 1.5rem; }
+  #trumbull-view .hero-details { gap: 1.5rem; }
+  #trumbull-view .photo-grid { grid-template-columns: 1fr !important; }
+  #trumbull-view .photo-cell { height: 250px; }
+  #trumbull-view .apt-section { padding: 50px 4%; }
+  #trumbull-view .contact-bar { padding: 40px 4%; flex-direction: column; align-items: flex-start; }
+  #trumbull-view .tab-nav { padding: 0 4%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #trumbull-view .tab-btn { padding: 0.9rem 1rem; font-size: 0.65rem; white-space: nowrap; }
+
+  /* Touch-friendly: make clickable elements bigger */
+  .loc-card { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .btn-primary, .btn-secondary, .nav-contact { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+
+  /* Make grid cells tap-friendly on mobile */
+  .apt-grid-cell, .photo-cell { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+
+  /* Lightbox touch improvements */
+  #bradley-view .lightbox, #orange-view .lightbox, #orange265-view .lightbox, #trumbull-view .lightbox-overlay {
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #bradley-view .lightbox img, #orange-view .lightbox img, #orange265-view .lightbox img, #trumbull-view .lightbox-overlay img {
+    max-width: 95vw;
+    max-height: 85vh;
+  }
+  #bradley-view .lb-close, #orange-view .lb-close, #orange265-view .lb-close, #trumbull-view .lightbox-close {
+    min-width: 44px; min-height: 44px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #bradley-view .lb-prev, #bradley-view .lb-next,
+  #orange-view .lb-prev, #orange-view .lb-next,
+  #orange265-view .lb-prev, #orange265-view .lb-next,
+  #trumbull-view .lightbox-prev, #trumbull-view .lightbox-next {
+    min-width: 44px; min-height: 44px;
+    display: flex; align-items: center; justify-content: center;
+  }
+}
+/* === Scroll Reveal Animations === */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.07s; }
+.reveal-delay-2 { transition-delay: 0.14s; }
+.reveal-delay-3 { transition-delay: 0.21s; }
+.reveal-delay-4 { transition-delay: 0.28s; }
+.reveal-delay-5 { transition-delay: 0.35s; }
+.reveal-delay-6 { transition-delay: 0.42s; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="home-view">
+<nav>
+  <a href="#hero" class="nav-logo">
+    <svg style="height:40px;width:auto;" viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/>
+      <rect x="47" y="8"  width="9" height="18" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="4"  width="9" height="22" rx="1.2" fill="#fff"/>
+      <rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/>
+      <rect x="89" y="19" width="9" height="7"  rx="1.2" fill="#666"/>
+      <text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text>
+      <rect x="33" y="45" width="9" height="6"  rx="1.2" fill="#888"/>
+      <rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/>
+      <rect x="75" y="45" width="9" height="9"  rx="1.2" fill="#bbb"/>
+      <rect x="89" y="45" width="9" height="5"  rx="1.2" fill="#666"/>
+      <text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text>
+    </svg>
+  </a>
+  <a href="#contact-info" class="nav-contact">Contact</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-line"></div>
+  <h1 class="reveal">Great<br>Spaces.</h1>
+  <div class="hero-row reveal reveal-delay-1">
+    <p class="hero-desc">Luxury living steps from Yale. Boutique student &amp; faculty housing designed for comfort and convenience. Studios • 1–5 Bedrooms • Premium Shared Living. Move-in ready.</p>
+    <div class="hero-ctas">
+      <a href="#locations" class="btn-primary">View Locations</a>
+      
+    </div>
+  </div>
+</section>
+
+<div class="section-divider reveal">
+  <div class="divider-item"><strong>New Haven, CT</strong></div>
+  
+  
+  
+  <div class="divider-item">@<strong>greatspaces_nh</strong></div>
+</div>
+
+<section id="locations" style="padding: 100px 5%; border-top: 1px solid var(--border);">
+  <div class="reveal" style="margin-bottom: 3rem;">
+    <div class="eyebrow" style="font-size:0.62rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--light); display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+      <span style="width:24px;height:1px;background:var(--light);display:inline-block;"></span>Our Locations
+    </div>
+    <h2 style="font-family:&#39;Syne&#39;,sans-serif; font-size:clamp(2.5rem,5vw,4rem); font-weight:700; letter-spacing:-0.02em; line-height:1; color:var(--white);">Where We Are</h2>
+  </div>
+  <div class="locations-grid" style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border);">
+    <div class="loc-card reveal reveal-delay-1" style="background-image: url(&#39;images/img_387.png&#39;); background-size: cover; background-position: center 30%; position: relative;">
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.55); border-radius:inherit;"></div>
+      <span class="loc-num" style="position:relative; z-index:1;">01</span>
+      <span class="loc-addr" style="position:relative; z-index:1;">57 Trumbull Street</span>
+      <span class="loc-city" style="position:relative; z-index:1;">New Haven, CT</span>
+    </div>
+    <div class="loc-card reveal reveal-delay-2" style="background-image: url(&#39;images/img_388.png&#39;); background-size: cover; background-position: center 30%; position: relative;">
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.55); border-radius:inherit;"></div>
+      <span class="loc-num" style="position:relative; z-index:1;">02</span>
+      <span class="loc-addr" style="position:relative; z-index:1;">55 Trumbull Street</span>
+      <span class="loc-city" style="position:relative; z-index:1;">New Haven, CT</span>
+    </div>
+    <div class="loc-card reveal reveal-delay-3" style="background-image: url(&#39;images/img_389.png&#39;); background-size: cover; background-position: center 30%; position: relative;">
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.55); border-radius:inherit;"></div>
+      <span class="loc-num" style="position:relative; z-index:1;">03</span>
+      <span class="loc-addr" style="position:relative; z-index:1;">261 Bradley Street</span>
+      <span class="loc-city" style="position:relative; z-index:1;">New Haven, CT</span>
+    </div>
+    <div class="loc-card reveal reveal-delay-4" style="background-image: url(&#39;images/img_390.png&#39;); background-size: cover; background-position: center 30%; position: relative;">
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.55); border-radius:inherit;"></div>
+      <span class="loc-num" style="position:relative; z-index:1;">04</span>
+      <span class="loc-addr" style="position:relative; z-index:1;">495 Orange Street</span>
+      <span class="loc-city" style="position:relative; z-index:1;">New Haven, CT</span>
+    </div>
+    <div class="loc-card reveal reveal-delay-5" style="background-image: url(&#39;images/img_391.png&#39;); background-size: cover; background-position: center 30%; position: relative;">
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.55); border-radius:inherit;"></div>
+      <span class="loc-num" style="position:relative; z-index:1;">05</span>
+      <span class="loc-addr" style="position:relative; z-index:1;">267 Orange Street</span>
+      <span class="loc-city" style="position:relative; z-index:1;">New Haven, CT</span>
+    </div>
+    <div class="loc-card reveal reveal-delay-6" style="background-image: url(&#39;images/img_391.png&#39;); background-size: cover; background-position: center 10%; position: relative;">
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,0.6); border-radius:inherit;"></div>
+      <span class="loc-num" style="position:relative; z-index:1;">06</span>
+      <span class="loc-addr" style="position:relative; z-index:1;">265 Orange Street</span>
+      <span class="loc-city" style="position:relative; z-index:1;">New Haven, CT</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-left reveal">
+    <h2>Let's Find Your Space</h2>
+    <p>Reach out to see what's available. We respond quickly and are happy to schedule a showing.</p>
+    <div class="contact-links" id="contact-info">
+      <a href="https://www.instagram.com/greatspaces_nh/" target="_blank" class="contact-link">
+        <span>Instagram</span> @greatspaces_nh <span class="arrow">↗</span>
+      </a>
+      <a href="https://www.facebook.com/GreatSpacesNewHaven/" target="_blank" class="contact-link">
+        <span>Facebook</span> Great Spaces New Haven <span class="arrow">↗</span>
+      </a>
+      <a href="javascript:void(0)" onclick="window.location=&#39;mai&#39;+&#39;lto:&#39;+&#39;greatspacesnh&#39;+&#39;@&#39;+&#39;gmail.com&#39;" class="contact-link">
+        <span>Email</span> <span class="__cf_email__" data-cfemail="4423362125303734252721372a2c042329252d286a272b29">[email&#160;protected]</span> <span class="arrow">↗</span>
+      </a>
+      <a href="tel:2036149183" class="contact-link">
+        <span>Phone</span> 203-614-9183 <span class="arrow">↗</span>
+      </a>
+      <a href="sms:2036149183" class="contact-link">
+        <span>Text</span> 203-614-9183 <span class="arrow">↗</span>
+      </a>
+    </div>
+  </div>
+  <form class="contact-form reveal reveal-delay-2" action="https://formspree.io/f/mlgpwyyn" method="POST" enctype="application/x-www-form-urlencoded">
+    <div class="form-row">
+      <div class="form-field"><label>First Name</label><input type="text" name="first_name" placeholder="Jane"></div>
+      <div class="form-field"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith"></div>
+    </div>
+    <div class="form-field"><label>Email</label><input type="email" name="email" placeholder="jane@yale.edu"></div>
+    <div class="form-field"><label>Looking for</label>
+      <select name="looking_for"><option value="">Select...</option><option>Studio / 1 Bed</option><option>2 Bedroom</option><option>3+ Bedroom</option></select>
+    </div>
+    <div class="form-field"><label>Message</label><textarea name="message" placeholder="Move-in date, budget, questions..."></textarea></div>
+    <button type="submit" class="btn-send">Send Message</button>
+    <div id="success">✓ Sent — we'll be in touch soon.</div>
+  </form>
+</section>
+
+<footer>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <svg style="height:36px;width:auto;" viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/>
+      <rect x="47" y="8"  width="9" height="18" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="4"  width="9" height="22" rx="1.2" fill="#fff"/>
+      <rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/>
+      <rect x="89" y="19" width="9" height="7"  rx="1.2" fill="#666"/>
+      <text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text>
+      <rect x="33" y="45" width="9" height="6"  rx="1.2" fill="#888"/>
+      <rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/>
+      <rect x="75" y="45" width="9" height="9"  rx="1.2" fill="#bbb"/>
+      <rect x="89" y="45" width="9" height="5"  rx="1.2" fill="#666"/>
+      <text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text>
+    </svg>
+  </div>
+  <ul class="footer-links">
+    <li><a href="https://www.instagram.com/greatspaces_nh/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.facebook.com/GreatSpacesNewHaven/" target="_blank">Facebook</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="footer-copy">© 2025 Great Spaces New Haven</div>
+</footer>
+</div><!-- end home-view -->
+<div id="bradley-view">
+<div class="bradley-nav">
+  <div class="nav-logo">
+    <svg class="nav-logo-svg" viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/>
+      <rect x="47" y="8"  width="9" height="18" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="4"  width="9" height="22" rx="1.2" fill="#fff"/>
+      <rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/>
+      <rect x="89" y="19" width="9" height="7"  rx="1.2" fill="#666"/>
+      <text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text>
+      <rect x="33" y="45" width="9" height="6"  rx="1.2" fill="#888"/>
+      <rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/>
+      <rect x="75" y="45" width="9" height="9"  rx="1.2" fill="#bbb"/>
+      <rect x="89" y="45" width="9" height="5"  rx="1.2" fill="#666"/>
+      <text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text>
+    </svg>
+  </div>
+  <button class="nav-back" onclick="showHome()">&#8592; Back</button>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <h1 class="header-title">261 Bradley Street</h1>
+  <div class="header-meta">
+    <div class="header-meta-item">
+      <div class="header-meta-label">Address</div>
+      <div class="header-meta-value">261 Bradley St, New Haven, CT</div>
+    </div>
+    <div class="header-meta-item">
+      <div class="header-meta-label">Managed By</div>
+      <div class="header-meta-value" style="display:flex;align-items:center;"><svg viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg" style="height:44px;width:auto;"><rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/><rect x="47" y="8" width="9" height="18" rx="1.2" fill="#ccc"/><rect x="61" y="4" width="9" height="22" rx="1.2" fill="#fff"/><rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/><rect x="89" y="19" width="9" height="7" rx="1.2" fill="#666"/><text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text><rect x="33" y="45" width="9" height="6" rx="1.2" fill="#888"/><rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/><rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/><rect x="75" y="45" width="9" height="9" rx="1.2" fill="#bbb"/><rect x="89" y="45" width="9" height="5" rx="1.2" fill="#666"/><text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrapper">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('1l')">Apt 1L Photos<span class="tab-sub">2 Bed · 2 Bath · 721 sqft</span></button>
+    <button class="tab-btn" onclick="showTab('1r')">Apt 1R Photos<span class="tab-sub">2 Bed · 2 Bath · 688 sqft</span></button>
+    <button class="tab-btn" onclick="showTab('2f')">Apt 2F Photos<span class="tab-sub">1 Bed · 1 Bath · 505 sqft</span></button>
+    <button class="tab-btn" onclick="showTab('2l')">Apt 2L Photos<span class="tab-sub">2 Bed · 1 Bath · 804 sqft</span></button>
+    <button class="tab-btn" onclick="showTab('2r')">Apt 2R Photos<span class="tab-sub">2 Bed · 2 Bath · 693 sqft</span></button>
+    <button class="tab-btn" onclick="showTab('3')">Apt 3 Photos<span class="tab-sub">4 Bed · 4 Bath · 1291 sqft</span></button>
+    <button class="tab-btn" onclick="showTab('b2')">APT B2 Photos<span class="tab-sub">2 Bed · 1 Bath · 645 sqft</span></button>
+    <button class="tab-btn" onclick="showTab('bs')">APT BS Photos<span class="tab-sub">Studio · 1 Bath · 365 sqft</span></button>
+  </div>
+</div>
+
+<!-- PHOTO PANELS -->
+<div class="panels-area">
+
+  <!-- APT 1L PHOTO PANEL -->
+  <div class="apt-panel active" id="panel-1l">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="openLightbox('1l',0)">
+      <img src="images/img_1.jpg" alt="Kitchen overview"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',1)">
+      <img src="images/img_2.jpg" alt="Living room"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',2)">
+      <img src="images/img_3.jpg" alt="Kitchen"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',3)">
+      <img src="images/img_4.jpg" alt="Kitchen from living area"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',4)">
+      <img src="images/img_5.jpg" alt="Entry and living"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1l',5)">
+      <img src="images/img_6.jpg" alt="Bedroom with chandelier"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',6)">
+      <img src="images/img_7.jpg" alt="Bedroom high ceilings"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',7)">
+      <img src="images/img_8.jpg" alt="Bedroom with closet"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',8)">
+      <img src="images/img_9.jpg" alt="Bedroom windows"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1l',9)">
+      <img src="images/img_10.jpg" alt="Bedroom overview"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',10)">
+      <img src="images/img_11.jpg" alt="Bedroom en suite"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',11)">
+      <img src="images/img_12.jpg" alt="Hallway"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',12)">
+      <img src="images/img_13.jpg" alt="Bathroom gold fixtures"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',13)">
+      <img src="images/img_14.jpg" alt="Second bathroom"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1l',14)">
+      <img src="images/img_15.jpg" alt="Shower"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1l',15)">
+      <img src="images/img_16.jpg" alt="Tiled shower"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1l',16)">
+      <img src="images/img_17.jpg" alt="Floor plan"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1l',17)">
+      <img src="images/img_18.jpg" alt="Exterior"/>
+    </div>
+    </div>
+  </div>
+
+  <!-- APT 1R PHOTO PANEL -->
+  <div class="apt-panel" id="panel-1r">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="openLightbox('1r',0)">
+      <img src="images/img_19.jpg" alt="Living room bay windows and kitchen"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',1)">
+      <img src="images/img_20.jpg" alt="Sun-filled living room bay"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',2)">
+      <img src="images/img_21.jpg" alt="Kitchen gray cabinets"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',3)">
+      <img src="images/img_22.jpg" alt="Kitchen from living area"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1r',4)">
+      <img src="images/img_23.jpg" alt="Kitchen with washer/dryer"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',5)">
+      <img src="images/img_24.jpg" alt="Primary bedroom with fireplace"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1r',6)">
+      <img src="images/img_25.jpg" alt="Primary bedroom closet and fireplace"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',7)">
+      <img src="images/img_26.jpg" alt="Bedroom with chandelier"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',8)">
+      <img src="images/img_27.jpg" alt="Second bedroom hallway"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',9)">
+      <img src="images/img_28.jpg" alt="Bedroom with en suite bath"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1r',10)">
+      <img src="images/img_29.jpg" alt="Bright bedroom with bay window"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',11)">
+      <img src="images/img_30.jpg" alt="Kitchen counter and bathroom view"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',12)">
+      <img src="images/img_31.jpg" alt="Bathroom vanity and subway tile"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',13)">
+      <img src="images/img_32.jpg" alt="Shower with matte black fixtures"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('1r',14)">
+      <img src="images/img_33.jpg" alt="Floor plan — Apt 1R 688 sqft"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('1r',15)">
+      <img src="images/img_34.jpg" alt="Exterior"/>
+    </div>
+    </div>
+  </div>
+
+  <!-- APT 2F PHOTO PANEL -->
+  <div class="apt-panel" id="panel-2f">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="openLightbox('2f',0)">
+      <img src="images/img_35.jpg" alt="Kitchen with dark cabinets and washer/dryer"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2f',1)">
+      <img src="images/img_36.jpg" alt="Bedroom with triple windows and chandelier"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2f',2)">
+      <img src="images/img_37.jpg" alt="Entry and kitchen overview"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2f',3)">
+      <img src="images/img_38.jpg" alt="Living area with in-unit washer/dryer"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2f',4)">
+      <img src="images/img_39.jpg" alt="Bright bedroom tree views"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2f',5)">
+      <img src="images/img_40.jpg" alt="Bedroom with chandelier"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2f',6)">
+      <img src="images/img_41.jpg" alt="Bedroom with single window"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2f',7)">
+      <img src="images/img_42.jpg" alt="Bathroom vanity gold fixtures"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2f',8)">
+      <img src="images/img_43.jpg" alt="Shower with garden views"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2f',9)">
+      <img src="images/img_44.jpg" alt="Floor plan — Apt 2F 505 sqft"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2f',10)">
+      <img src="images/img_45.jpg" alt="Exterior"/>
+    </div>
+    </div>
+  </div>
+
+  <!-- APT 2L PHOTO PANEL -->
+  <div class="apt-panel" id="panel-2l">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="openLightbox('2l',0)">
+      <img src="images/img_46.jpg" alt="Kitchen full wall gray cabinets"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',1)">
+      <img src="images/img_47.jpg" alt="Living area bay windows"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',2)">
+      <img src="images/img_48.jpg" alt="Living room bay and entry"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',3)">
+      <img src="images/img_49.jpg" alt="Bright bedroom two windows"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2l',4)">
+      <img src="images/img_50.jpg" alt="Bedroom with garden views"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',5)">
+      <img src="images/img_51.jpg" alt="Bedroom with chandelier"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',6)">
+      <img src="images/img_52.jpg" alt="Bedroom with closet"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',7)">
+      <img src="images/img_53.jpg" alt="Second bedroom single window"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2l',8)">
+      <img src="images/img_54.jpg" alt="Bedroom hallway and closet"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',9)">
+      <img src="images/img_55.jpg" alt="Bedroom with doors to living"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2l',10)">
+      <img src="images/img_56.jpg" alt="Bathroom vanity and shower"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2l',11)">
+      <img src="images/img_57.jpg" alt="Floor plan — Apt 2L 804 sqft"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2l',12)">
+      <img src="images/img_58.jpg" alt="Exterior"/>
+    </div>
+    </div>
+  </div>
+
+  <!-- APT 2R PHOTO PANEL -->
+  <div class="apt-panel" id="panel-2r">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="openLightbox('2r',0)">
+      <img src="images/img_58.jpg" alt="Kitchen bay window dark cabinets"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',1)">
+      <img src="images/img_59.jpg" alt="Living area kitchen with bay window"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',2)">
+      <img src="images/img_60.jpg" alt="Living room bay windows and kitchen"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',3)">
+      <img src="images/img_61.jpg" alt="Kitchen full view dark cabinets"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2r',4)">
+      <img src="images/img_62.jpg" alt="Living room bay windows and bedrooms"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',5)">
+      <img src="images/img_63.jpg" alt="Bedroom bay window tree views"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',6)">
+      <img src="images/img_64.jpg" alt="Bedroom triple bay windows"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',7)">
+      <img src="images/img_65.jpg" alt="Bedroom with chandelier"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2r',8)">
+      <img src="images/img_66.jpg" alt="Bedroom with chandelier and window"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',9)">
+      <img src="images/img_67.jpg" alt="Bedroom with chandelier views to kitchen"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',10)">
+      <img src="images/img_68.jpg" alt="Bedroom with single window chandelier"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',11)">
+      <img src="images/img_69.jpg" alt="Large bedroom two closets en suite"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2r',12)">
+      <img src="images/img_70.jpg" alt="Bedroom hallway corridor"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',13)">
+      <img src="images/img_71.jpg" alt="Bedroom and closet"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',14)">
+      <img src="images/img_72.jpg" alt="Bathroom vanity gold fixtures"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',15)">
+      <img src="images/img_73.jpg" alt="Second bathroom gold fixtures"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2r',16)">
+      <img src="images/img_74.jpg" alt="Bathroom with subway tile shower"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2r',17)">
+      <img src="images/img_75.jpg" alt="Shower black fixtures subway tile"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('2r',18)">
+      <img src="images/img_76.jpg" alt="Floor plan — Apt 2R 693 sqft"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('2r',19)">
+      <img src="images/img_78.jpg" alt="Exterior"/>
+    </div>
+    </div>
+  </div>
+
+  <!-- APT 3 PHOTO PANEL -->
+  <div class="apt-panel" id="panel-3">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="openLightbox('3',0)">
+      <img src="images/img_77.jpg" alt="Living area exposed beam open to kitchen"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',1)">
+      <img src="images/img_78.jpg" alt="Room with exposed beam and windows"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',2)">
+      <img src="images/img_79.jpg" alt="Vaulted living room exposed beam"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',3)">
+      <img src="images/img_80.jpg" alt="Hallway with exposed beam vaulted ceiling"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('3',4)">
+      <img src="images/img_81.jpg" alt="Vaulted loft space with angled ceiling"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',5)">
+      <img src="images/img_82.jpg" alt="Open living area exposed beam and kitchen view"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',6)">
+      <img src="images/img_83.jpg" alt="Bedroom four windows tree views"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',7)">
+      <img src="images/img_84.jpg" alt="Bedroom vaulted with kitchen view"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('3',8)">
+      <img src="images/img_85.jpg" alt="Bedroom exposed beam two windows"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',9)">
+      <img src="images/img_86.jpg" alt="Bedroom with exposed beam and door"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',10)">
+      <img src="images/img_87.jpg" alt="Bedroom with exposed beam vaulted"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',11)">
+      <img src="images/img_88.jpg" alt="Bedroom vaulted ceiling with en suite bath beam"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('3',12)">
+      <img src="images/img_89.jpg" alt="Bedroom vaulted with triple windows"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',13)">
+      <img src="images/img_90.jpg" alt="Bathroom vaulted angled ceiling shower"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',14)">
+      <img src="images/img_91.jpg" alt="Bathroom with exposed beam gray vanity"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',15)">
+      <img src="images/img_92.jpg" alt="Bathroom vanity and shower sloped ceiling"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',16)">
+      <img src="images/img_93.jpg" alt="Bedroom exposed beam window tree views"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('3',17)">
+      <img src="images/img_94.jpg" alt="Bedroom vaulted with triple windows"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',18)">
+      <img src="images/img_95.jpg" alt="Bedroom vaulted closets"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',19)">
+      <img src="images/img_96.jpg" alt="Bedroom vaulted angled ceiling closets"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('3',20)">
+      <img src="images/img_97.jpg" alt="Bathroom black fixtures exposed beam shower"/>
+    </div>
+    <div class="apt-grid-cell" onclick="openLightbox('3',21)">
+      <img src="images/img_98.jpg" alt="Bathroom shower sloped ceiling vanity"/>
+    </div>
+    <div class="apt-grid-cell wide" onclick="openLightbox('3',22)">
+      <img src="images/img_99.jpg" alt="Floor plan — Apt 3, 1,291 sqft · 4 Bed · 4 Bath"/>
+    </div>
+    </div>
+  </div>
+  <div class="apt-panel" id="panel-b2">
+    <div class="apt-grid">
+      <div class="apt-grid-cell wide" onclick="openLightbox('b2',0)"><img src="images/img_100.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',1)"><img src="images/img_101.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',2)"><img src="images/img_102.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',3)"><img src="images/img_103.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('b2',4)"><img src="images/img_104.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',5)"><img src="images/img_105.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',6)"><img src="images/img_106.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('b2',7)"><img src="images/img_107.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('b2',8)"><img src="images/img_108.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',9)"><img src="images/img_109.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',10)"><img src="images/img_110.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('b2',11)"><img src="images/img_111.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('b2',12)"><img src="images/img_112.jpg" alt=""/></div>
+    </div>
+  </div>
+  <div class="apt-panel" id="panel-bs">
+    <div class="apt-grid">
+      <div class="apt-grid-cell wide" onclick="openLightbox('bs',0)"><img src="images/img_113.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('bs',1)"><img src="images/img_114.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('bs',2)"><img src="images/img_115.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('bs',3)"><img src="images/img_116.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('bs',4)"><img src="images/img_117.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('bs',5)"><img src="images/img_118.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('bs',6)"><img src="images/img_119.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('bs',7)"><img src="images/img_120.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('bs',8)"><img src="images/img_121.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('bs',9)"><img src="images/img_122.jpg" alt=""/></div>
+      <div class="apt-grid-cell" onclick="openLightbox('bs',10)"><img src="images/img_123.jpg" alt=""/></div>
+      <div class="apt-grid-cell wide" onclick="openLightbox('bs',11)"><img src="images/img_124.jpg" alt=""/></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" onclick="closeLB()">×</button>
+  <button class="lb-prev" onclick="shiftLB(-1)">&#8249;</button>
+  <img id="lb-img" src="" alt=""/>
+  <button class="lb-next" onclick="shiftLB(1)">&#8250;</button>
+  <div class="lb-counter" id="lb-counter"></div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const IMGS_1L = ["images/img_1.jpg","images/img_2.jpg","images/img_3.jpg","images/img_4.jpg","images/img_5.jpg","images/img_6.jpg","images/img_7.jpg","images/img_8.jpg","images/img_9.jpg","images/img_10.jpg","images/img_11.jpg","images/img_12.jpg","images/img_13.jpg","images/img_14.jpg","images/img_15.jpg","images/img_16.jpg","images/img_17.jpg","images/img_18.jpg"];
+const IMGS_1R = ["images/img_19.jpg","images/img_20.jpg","images/img_21.jpg","images/img_22.jpg","images/img_23.jpg","images/img_24.jpg","images/img_25.jpg","images/img_26.jpg","images/img_27.jpg","images/img_28.jpg","images/img_29.jpg","images/img_30.jpg","images/img_31.jpg","images/img_32.jpg","images/img_33.jpg","images/img_34.jpg"];
+const IMGS_2F = ["images/img_35.jpg","images/img_36.jpg","images/img_37.jpg","images/img_38.jpg","images/img_39.jpg","images/img_40.jpg","images/img_41.jpg","images/img_42.jpg","images/img_43.jpg","images/img_44.jpg","images/img_45.jpg"];
+const IMGS_2L = ["images/img_46.jpg","images/img_47.jpg","images/img_48.jpg","images/img_49.jpg","images/img_50.jpg","images/img_51.jpg","images/img_52.jpg","images/img_53.jpg","images/img_54.jpg","images/img_55.jpg","images/img_56.jpg","images/img_57.jpg","images/img_58.jpg"];
+const IMGS_2R = ["images/img_58.jpg","images/img_59.jpg","images/img_60.jpg","images/img_61.jpg","images/img_62.jpg","images/img_63.jpg","images/img_64.jpg","images/img_65.jpg","images/img_66.jpg","images/img_67.jpg","images/img_68.jpg","images/img_69.jpg","images/img_70.jpg","images/img_71.jpg","images/img_72.jpg","images/img_73.jpg","images/img_74.jpg","images/img_75.jpg","images/img_76.jpg","images/img_78.jpg"];
+const IMGS_3  = ["images/img_77.jpg","images/img_78.jpg","images/img_79.jpg","images/img_80.jpg","images/img_81.jpg","images/img_82.jpg","images/img_83.jpg","images/img_84.jpg","images/img_85.jpg","images/img_86.jpg","images/img_87.jpg","images/img_88.jpg","images/img_89.jpg","images/img_90.jpg","images/img_91.jpg","images/img_92.jpg","images/img_93.jpg","images/img_94.jpg","images/img_95.jpg","images/img_96.jpg","images/img_97.jpg","images/img_98.jpg","images/img_99.jpg"];
+
+let cur = 0;
+let curUnit = '1l';
+
+const unitMap = { '1l': IMGS_1L, '1r': IMGS_1R, '2f': IMGS_2F, '2l': IMGS_2L, '2r': IMGS_2R, '3': IMGS_3 };
+
+function showTab(id) {
+  document.querySelectorAll('.apt-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+function getImgs(unit) {
+  if (!unitMap[unit]) {
+    const panel = document.getElementById('panel-' + unit);
+    unitMap[unit] = Array.from(panel.querySelectorAll('.apt-grid-cell img')).map(img => img.src);
+  }
+  return unitMap[unit];
+}
+
+function openLightbox(unit, i) {
+  curUnit = unit;
+  cur = i;
+  const arr = getImgs(unit);
+  document.getElementById('lb-img').src = arr[i] || '';
+  document.getElementById('lb-counter').textContent = (i+1) + ' / ' + arr.length;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLB() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function shiftLB(dir) {
+  const arr = getImgs(curUnit);
+  cur = (cur + dir + arr.length) % arr.length;
+  document.getElementById('lb-img').src = arr[cur];
+  document.getElementById('lb-counter').textContent = (cur+1) + ' / ' + arr.length;
+}
+
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLB();
+});
+
+
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'ArrowRight') shiftLB(1);
+  if (e.key === 'ArrowLeft') shiftLB(-1);
+  if (e.key === 'Escape') closeLB();
+});
+
+['2l', 'b2', 'bs'].forEach(function(id) {
+  var panel = document.getElementById('panel-' + id);
+  if (!panel) return;
+  panel.querySelectorAll('.apt-grid-cell').forEach(function(cell) {
+    var img = cell.querySelector('img');
+    if (!img) return;
+    cell.classList.add('blur-cell');
+    var bg = document.createElement('div');
+    bg.className = 'blur-bg';
+    bg.style.backgroundImage = 'url(' + img.src + ')';
+    cell.insertBefore(bg, img);
+  });
+});
+</script>
+<footer style="border-top:1px solid rgba(255,255,255,0.1); padding:56px 48px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:32px;">
+  <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4);">Contact</div>
+  <div style="display:flex; gap:48px; flex-wrap:wrap;">
+    <a href="/cdn-cgi/l/email-protection#9dfaeff8fce9eeedfcfef8eef3f5ddfaf0fcf4f1b3fef2f0" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Email</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'"><span class="__cf_email__" data-cfemail="771005121603040716141204191f37101a161e1b5914181a">[email&#160;protected]</span> ↗</div>
+    </a>
+    <a href="tel:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Phone</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+    <a href="sms:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Text</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+  </div>
+</footer>
+</div><!-- end bradley-view -->
+
+<div id="orange-view">
+<div class="orange-nav">
+  <div class="nav-logo">
+    <svg class="nav-logo-svg" viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/>
+      <rect x="47" y="8"  width="9" height="18" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="4"  width="9" height="22" rx="1.2" fill="#fff"/>
+      <rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/>
+      <rect x="89" y="19" width="9" height="7"  rx="1.2" fill="#666"/>
+      <text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text>
+      <rect x="33" y="45" width="9" height="6"  rx="1.2" fill="#888"/>
+      <rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/>
+      <rect x="75" y="45" width="9" height="9"  rx="1.2" fill="#bbb"/>
+      <rect x="89" y="45" width="9" height="5"  rx="1.2" fill="#666"/>
+      <text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text>
+    </svg>
+  </div>
+  <button class="nav-back" onclick="showHome()">&#8592; Back</button>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <h1 class="header-title">495 Orange Street</h1>
+  <div class="header-meta">
+    <div class="header-meta-item">
+      <div class="header-meta-label">Address</div>
+      <div class="header-meta-value">495 Orange St, New Haven, CT</div>
+    </div>
+    <div class="header-meta-item">
+      <div class="header-meta-label">Managed By</div>
+      <div class="header-meta-value" style="display:flex;align-items:center;"><svg viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg" style="height:44px;width:auto;"><rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/><rect x="47" y="8" width="9" height="18" rx="1.2" fill="#ccc"/><rect x="61" y="4" width="9" height="22" rx="1.2" fill="#fff"/><rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/><rect x="89" y="19" width="9" height="7" rx="1.2" fill="#666"/><text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text><rect x="33" y="45" width="9" height="6" rx="1.2" fill="#888"/><rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/><rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/><rect x="75" y="45" width="9" height="9" rx="1.2" fill="#bbb"/><rect x="89" y="45" width="9" height="5" rx="1.2" fill="#666"/><text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrapper">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="orangeShowTab('1')">Unit 1<span class="tab-sub">3 Bed · 2 Bath · 1,475 sqft</span></button>
+    <button class="tab-btn" onclick="orangeShowTab('2f')">Unit 2F<span class="tab-sub">2 Bed · 1 Bath · 553 sqft</span></button>
+    <button class="tab-btn" onclick="orangeShowTab('2r')">Unit 2R<span class="tab-sub">2 Bed · 1 Bath · 800 sqft</span></button>
+    <button class="tab-btn" onclick="orangeShowTab('3')">Unit 3<span class="tab-sub">3 Bed · 2 Bath · 1,400 sqft</span></button>
+    <button class="tab-btn" onclick="orangeShowTab('b')">Unit B<span class="tab-sub">4 Bed · 2 Bath · 1,583 sqft</span></button>
+  </div>
+</div>
+
+<!-- PANELS -->
+<!-- PANELS -->
+<div class="panels-area">
+  <div class="apt-panel active" id="orange-panel-1">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="orangeOpenLightbox('1',0)"><img src="images/img_224.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',1)"><img src="images/img_225.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',2)"><img src="images/img_226.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',3)"><img src="images/img_227.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',4)"><img src="images/img_228.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',5)"><img src="images/img_229.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',6)"><img src="images/img_230.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',7)"><img src="images/img_231.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',8)"><img src="images/img_232.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',9)"><img src="images/img_233.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',10)"><img src="images/img_234.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('1',11)"><img src="images/img_235.jpg"/></div>
+    </div>
+  </div>
+  <div class="apt-panel" id="orange-panel-2f">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="orangeOpenLightbox('2f',0)"><img src="images/img_236.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',1)"><img src="images/img_237.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',2)"><img src="images/img_238.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',3)"><img src="images/img_239.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',4)"><img src="images/img_240.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',5)"><img src="images/img_241.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',6)"><img src="images/img_242.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',7)"><img src="images/img_243.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',8)"><img src="images/img_244.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',9)"><img src="images/img_245.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',10)"><img src="images/img_246.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',11)"><img src="images/img_247.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',12)"><img src="images/img_239.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',13)"><img src="images/img_249.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',14)"><img src="images/img_250.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2f',15)"><img src="images/img_251.jpg"/></div>
+    </div>
+  </div>
+  <div class="apt-panel" id="orange-panel-2r">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="orangeOpenLightbox('2r',0)"><img src="images/img_252.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',1)"><img src="images/img_253.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',2)"><img src="images/img_254.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',3)"><img src="images/img_255.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',4)"><img src="images/img_256.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',5)"><img src="images/img_257.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',6)"><img src="images/img_258.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',7)"><img src="images/img_259.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',8)"><img src="images/img_244.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',9)"><img src="images/img_261.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('2r',10)"><img src="images/img_262.jpg"/></div>
+    </div>
+  </div>
+  <div class="apt-panel" id="orange-panel-3">
+    <div class="apt-grid">
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',0)"><img src="images/img_263.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',1)"><img src="images/img_264.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',2)"><img src="images/img_265.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',3)"><img src="images/img_266.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',4)"><img src="images/img_267.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',5)"><img src="images/img_268.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',6)"><img src="images/img_269.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',7)"><img src="images/img_270.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',8)"><img src="images/img_271.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',9)"><img src="images/img_272.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',10)"><img src="images/img_273.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',11)"><img src="images/img_274.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',12)"><img src="images/img_275.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',13)"><img src="images/img_276.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('3',14)"><img src="images/img_277.jpg"/></div>
+    </div>
+  </div>
+  <div class="apt-panel" id="orange-panel-b">
+    <div class="apt-grid">
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',0)"><img src="images/img_278.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',1)"><img src="images/img_279.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',2)"><img src="images/img_280.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',3)"><img src="images/img_281.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',4)"><img src="images/img_282.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',5)"><img src="images/img_283.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',6)"><img src="images/img_284.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',7)"><img src="images/img_285.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',8)"><img src="images/img_286.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',9)"><img src="images/img_287.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',10)"><img src="images/img_288.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',11)"><img src="images/img_289.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',12)"><img src="images/img_290.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',13)"><img src="images/img_291.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',14)"><img src="images/img_292.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',15)"><img src="images/img_293.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',16)"><img src="images/img_294.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',17)"><img src="images/img_295.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',18)"><img src="images/img_296.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',19)"><img src="images/img_297.jpg"/></div>
+    <div class="apt-grid-cell" onclick="orangeOpenLightbox('b',20)"><img src="images/img_298.jpg"/></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ORANGE LIGHTBOX -->
+<div class="lightbox" id="orange-lightbox">
+  <button class="lb-close" onclick="orangeCloseLB()">&times;</button>
+  <button class="lb-prev" onclick="orangeShiftLB(-1)">&#8249;</button>
+  <img id="orange-lb-img" src="" alt=""/>
+  <button class="lb-next" onclick="orangeShiftLB(1)">&#8250;</button>
+  <div class="lb-counter" id="orange-lb-counter"></div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// === 495 Orange Street Tab/Lightbox JS ===
+let orangeCur = 0;
+let orangeCurUnit = '1';
+const orangeUnitMap = {};
+
+function orangeShowTab(id) {
+  document.querySelectorAll('#orange-view .apt-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#orange-view .tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('orange-panel-' + id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+function orangeGetImgs(unit) {
+  if (!orangeUnitMap[unit]) {
+    const panel = document.getElementById('orange-panel-' + unit);
+    orangeUnitMap[unit] = Array.from(panel.querySelectorAll('.apt-grid-cell img')).map(img => img.src);
+  }
+  return orangeUnitMap[unit];
+}
+
+function orangeOpenLightbox(unit, i) {
+  orangeCurUnit = unit;
+  orangeCur = i;
+  const arr = orangeGetImgs(unit);
+  document.getElementById('orange-lb-img').src = arr[i] || '';
+  document.getElementById('orange-lb-counter').textContent = (i+1) + ' / ' + arr.length;
+  document.getElementById('orange-lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function orangeCloseLB() {
+  document.getElementById('orange-lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function orangeShiftLB(dir) {
+  const arr = orangeGetImgs(orangeCurUnit);
+  orangeCur = (orangeCur + dir + arr.length) % arr.length;
+  document.getElementById('orange-lb-img').src = arr[orangeCur];
+  document.getElementById('orange-lb-counter').textContent = (orangeCur+1) + ' / ' + arr.length;
+}
+
+document.getElementById('orange-lightbox').addEventListener('click', function(e) {
+  if (e.target === this) orangeCloseLB();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('orange-lightbox').classList.contains('open')) return;
+  if (e.key === 'ArrowRight') orangeShiftLB(1);
+  if (e.key === 'ArrowLeft') orangeShiftLB(-1);
+  if (e.key === 'Escape') orangeCloseLB();
+});
+
+['1', '2f', '2r', '3', 'b'].forEach(function(id) {
+  var panel = document.getElementById('orange-panel-' + id);
+  if (!panel) return;
+  panel.querySelectorAll('.apt-grid-cell').forEach(function(cell) {
+    var img = cell.querySelector('img');
+    if (!img) return;
+    cell.classList.add('blur-cell');
+    var bg = document.createElement('div');
+    bg.className = 'blur-bg';
+    bg.style.backgroundImage = 'url(' + img.src + ')';
+    cell.insertBefore(bg, img);
+  });
+});
+</script>
+
+<footer style="border-top:1px solid rgba(255,255,255,0.1); padding:56px 48px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:32px;">
+  <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4);">Contact</div>
+  <div style="display:flex; gap:48px; flex-wrap:wrap;">
+    <a href="/cdn-cgi/l/email-protection#b7d0c5d2d6c3c4c7d6d4d2c4d9dff7d0dad6dedb99d4d8da" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Email</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'"><span class="__cf_email__" data-cfemail="87e0f5e2e6f3f4f7e6e4e2f4e9efc7e0eae6eeeba9e4e8ea">[email&#160;protected]</span> ↗</div>
+    </a>
+    <a href="tel:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Phone</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+    <a href="sms:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Text</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+  </div>
+</footer>
+</div><!-- end orange-view -->
+
+<div id="orange265-view">
+<div class="orange265-nav">
+  <div class="nav-logo">
+    <svg class="nav-logo-svg" viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/>
+      <rect x="47" y="8"  width="9" height="18" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="4"  width="9" height="22" rx="1.2" fill="#fff"/>
+      <rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/>
+      <rect x="89" y="19" width="9" height="7"  rx="1.2" fill="#666"/>
+      <text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text>
+      <rect x="33" y="45" width="9" height="6"  rx="1.2" fill="#888"/>
+      <rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/>
+      <rect x="75" y="45" width="9" height="9"  rx="1.2" fill="#bbb"/>
+      <rect x="89" y="45" width="9" height="5"  rx="1.2" fill="#666"/>
+      <text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text>
+    </svg>
+  </div>
+  <button class="nav-back" onclick="showHome()">&#8592; Back</button>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <h1 class="header-title">265 Orange Street</h1>
+  <div class="header-meta">
+    <div class="header-meta-item">
+      <div class="header-meta-label">Address</div>
+      <div class="header-meta-value">265 Orange St, New Haven, CT</div>
+    </div>
+    <div class="header-meta-item">
+      <div class="header-meta-label">Managed By</div>
+      <div class="header-meta-value" style="display:flex;align-items:center;"><svg viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg" style="height:44px;width:auto;"><rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/><rect x="47" y="8" width="9" height="18" rx="1.2" fill="#ccc"/><rect x="61" y="4" width="9" height="22" rx="1.2" fill="#fff"/><rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/><rect x="89" y="19" width="9" height="7" rx="1.2" fill="#666"/><text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text><rect x="33" y="45" width="9" height="6" rx="1.2" fill="#888"/><rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/><rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/><rect x="75" y="45" width="9" height="9" rx="1.2" fill="#bbb"/><rect x="89" y="45" width="9" height="5" rx="1.2" fill="#666"/><text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrapper">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="o265ShowTab('u2')">Unit 2<span class="tab-sub">4/5 Flex &middot; 3 Bath &middot; 1,982 sqft</span></button>
+  </div>
+</div>
+
+<!-- PANELS -->
+<div class="panels-area">
+  <div class="apt-panel active" id="o265-panel-u2">
+    <div class="apt-grid">
+    <div class="apt-grid-cell wide" onclick="o265OpenLightbox('u2',0)"><img src="images/img_393.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',1)"><img src="images/img_394.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',2)"><img src="images/img_395.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',3)"><img src="images/img_396.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',4)"><img src="images/img_397.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',5)"><img src="images/img_398.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',6)"><img src="images/img_399.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',7)"><img src="images/img_400.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',8)"><img src="images/img_401.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',9)"><img src="images/img_402.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',10)"><img src="images/img_403.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',11)"><img src="images/img_404.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',12)"><img src="images/img_405.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',13)"><img src="images/img_406.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',14)"><img src="images/img_407.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',15)"><img src="images/img_408.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',16)"><img src="images/img_409.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',17)"><img src="images/img_410.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',18)"><img src="images/img_411.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',19)"><img src="images/img_412.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',20)"><img src="images/img_413.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',21)"><img src="images/img_414.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',22)"><img src="images/img_415.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',23)"><img src="images/img_416.jpg"/></div>
+    <div class="apt-grid-cell" onclick="o265OpenLightbox('u2',24)"><img src="images/img_417.jpg"/></div>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="o265-lightbox">
+  <button class="lb-close" onclick="o265CloseLB()">&times;</button>
+  <button class="lb-prev" onclick="o265ShiftLB(-1)">&#8249;</button>
+  <img id="o265-lb-img" src="" alt=""/>
+  <button class="lb-next" onclick="o265ShiftLB(1)">&#8250;</button>
+  <div class="lb-counter" id="o265-lb-counter"></div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// === 265 Orange Street Tab/Lightbox JS ===
+let o265Cur = 0;
+let o265CurUnit = 'u2';
+const o265UnitMap = {};
+
+function o265ShowTab(id) {
+  document.querySelectorAll('#orange265-view .apt-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#orange265-view .tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('o265-panel-' + id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+function o265GetImgs(unit) {
+  if (!o265UnitMap[unit]) {
+    const panel = document.getElementById('o265-panel-' + unit);
+    o265UnitMap[unit] = Array.from(panel.querySelectorAll('.apt-grid-cell img')).map(img => img.src);
+  }
+  return o265UnitMap[unit];
+}
+
+function o265OpenLightbox(unit, i) {
+  o265CurUnit = unit;
+  o265Cur = i;
+  const arr = o265GetImgs(unit);
+  document.getElementById('o265-lb-img').src = arr[i] || '';
+  document.getElementById('o265-lb-counter').textContent = (i+1) + ' / ' + arr.length;
+  document.getElementById('o265-lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function o265CloseLB() {
+  document.getElementById('o265-lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function o265ShiftLB(dir) {
+  const arr = o265GetImgs(o265CurUnit);
+  o265Cur = (o265Cur + dir + arr.length) % arr.length;
+  document.getElementById('o265-lb-img').src = arr[o265Cur];
+  document.getElementById('o265-lb-counter').textContent = (o265Cur+1) + ' / ' + arr.length;
+}
+
+document.getElementById('o265-lightbox').addEventListener('click', function(e) {
+  if (e.target === this) o265CloseLB();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('o265-lightbox').classList.contains('open')) return;
+  if (e.key === 'ArrowRight') o265ShiftLB(1);
+  if (e.key === 'ArrowLeft') o265ShiftLB(-1);
+  if (e.key === 'Escape') o265CloseLB();
+});
+
+['u2'].forEach(function(id) {
+  var panel = document.getElementById('o265-panel-' + id);
+  if (!panel) return;
+  panel.querySelectorAll('.apt-grid-cell').forEach(function(cell) {
+    var img = cell.querySelector('img');
+    if (!img) return;
+    cell.classList.add('blur-cell');
+    var bg = document.createElement('div');
+    bg.className = 'blur-bg';
+    bg.style.backgroundImage = 'url(' + img.src + ')';
+    cell.insertBefore(bg, img);
+  });
+});
+</script>
+
+<footer style="border-top:1px solid rgba(255,255,255,0.1); padding:56px 48px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:32px;">
+  <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4);">Contact</div>
+  <div style="display:flex; gap:48px; flex-wrap:wrap;">
+    <a href="/cdn-cgi/l/email-protection#167164737762656677757365787e56717b777f7a3875797b" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Email</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'"><span class="__cf_email__" data-cfemail="3354415652474043525056405d5b73545e525a5f1d505c5e">[email&#160;protected]</span> ↗</div>
+    </a>
+    <a href="tel:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Phone</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+    <a href="sms:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Text</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+  </div>
+</footer>
+</div><!-- end orange265-view -->
+
+<div id="trumbull-view">
+<div class="trumbull-nav">
+  <div class="nav-logo">
+    <svg class="nav-logo-svg" viewBox="0 0 130 70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="33" y="15" width="9" height="11" rx="1.2" fill="#888"/>
+      <rect x="47" y="8"  width="9" height="18" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="4"  width="9" height="22" rx="1.2" fill="#fff"/>
+      <rect x="75" y="11" width="9" height="15" rx="1.2" fill="#bbb"/>
+      <rect x="89" y="19" width="9" height="7"  rx="1.2" fill="#666"/>
+      <text x="65" y="40" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#fff">GREAT SPACES</text>
+      <rect x="33" y="45" width="9" height="6"  rx="1.2" fill="#888"/>
+      <rect x="47" y="45" width="9" height="11" rx="1.2" fill="#ccc"/>
+      <rect x="61" y="45" width="9" height="13" rx="1.2" fill="#fff"/>
+      <rect x="75" y="45" width="9" height="9"  rx="1.2" fill="#bbb"/>
+      <rect x="89" y="45" width="9" height="5"  rx="1.2" fill="#666"/>
+      <text x="65" y="65" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="5.5" font-weight="400" letter-spacing="3.5" fill="#888">NEW HAVEN</text>
+    </svg>
+  </div>
+  <button class="nav-back" onclick="showHome()">&#8592; Back</button>
+</div>
+<div class="hero">
+  
+  <h1>57 Trumbull Street</h1>
+  <div class="hero-details">
+    <div class="detail-item">
+      <span class="detail-label">Address</span>
+      <span class="detail-value">57 Trumbull St, New Haven, CT 06511</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Managed by</span>
+      <span class="detail-value">Great Spaces New Haven</span>
+    </div>
+  </div>
+</div>
+
+<div class="tab-nav">
+  <button class="tab-btn" onclick="trumbullSwitchTab('photos')">Apt 1F Photos<small>1 Bed &middot; 1 Bath &middot; 415 SQFT</small></button>
+  <button class="tab-btn" onclick="trumbullSwitchTab('apt1m')">Apt 1M Photos<small>2 Bed &middot; 3 Bath &middot; 971 SQFT</small></button>
+  <button class="tab-btn" onclick="trumbullSwitchTab('apt1r')">Apt 1R Photos<small>2 Bed &middot; 1 Bath &middot; 635 SQFT</small></button>
+  <button class="tab-btn" onclick="trumbullSwitchTab('apt2r')">Apt 2R Photos<small>1 Bed &middot; 1 Bath &middot; 335 SQFT</small></button>
+  <button class="tab-btn" onclick="trumbullSwitchTab('apt2f')">Apt 2F Photos<small>2 Bed &middot; 1 Bath &middot; 620 SQFT</small></button>
+  <button class="tab-btn" onclick="trumbullSwitchTab('apt3')">Apt 3 Photos<small>3 Bed &middot; 4 Bath &middot; 898 SQFT</small></button>
+  <button class="tab-btn active" onclick="trumbullSwitchTab('highlights')">Highlights</button>
+</div>
+
+<div id="trumbull-tab-photos" class="tab-content">
+<div class="photo-grid">
+  <div class="photo-cell"><img src="images/img_299.jpg" alt="Apt 1F - Photo 1"></div>
+  <div class="photo-cell"><img src="images/img_300.jpg" alt="Apt 1F - Photo 2"></div>
+  <div class="photo-cell"><img src="images/img_301.jpg" alt="Apt 1F - Photo 3"></div>
+  <div class="photo-cell"><img src="images/img_302.jpg" alt="Apt 1F - Photo 4"></div>
+  <div class="photo-cell"><img src="images/img_303.jpg" alt="Apt 1F - Photo 5"></div>
+  <div class="photo-cell"><img src="images/img_304.jpg" alt="Apt 1F - Photo 6"></div>
+  <div class="photo-cell"><img src="images/img_305.jpg" alt="Apt 1F - Photo 7"></div>
+  <div class="photo-cell"><img src="images/img_306.jpg" alt="Apt 1F - Photo 8"></div>
+  <div class="photo-cell"><img src="images/img_307.jpg" alt="Apt 1F - Photo 9"></div>
+</div>
+</div>
+
+<div id="trumbull-tab-apt1m" class="tab-content">
+<div class="photo-grid">
+  <div class="photo-cell"><img src="images/img_308.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT.jpg"></div>
+  <div class="photo-cell"><img src="images/img_309.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-1.jpg"></div>
+  <div class="photo-cell"><img src="images/img_310.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-2.jpg"></div>
+  <div class="photo-cell"><img src="images/img_311.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-3.jpg"></div>
+  <div class="photo-cell"><img src="images/img_312.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-4.jpg"></div>
+  <div class="photo-cell"><img src="images/img_313.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-5.jpg"></div>
+  <div class="photo-cell"><img src="images/img_314.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-6.jpg"></div>
+  <div class="photo-cell"><img src="images/img_315.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-7.jpg"></div>
+  <div class="photo-cell"><img src="images/img_316.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-8.jpg"></div>
+  <div class="photo-cell"><img src="images/img_317.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-9.jpg"></div>
+  <div class="photo-cell"><img src="images/img_318.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-10.jpg"></div>
+  <div class="photo-cell"><img src="images/img_319.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-23.jpg"></div>
+  <div class="photo-cell"><img src="images/img_320.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-24.jpg"></div>
+  <div class="photo-cell"><img src="images/img_321.jpg" alt="57TrumbullSt_Apt1M_NewHaven_CT-27.jpg"></div>
+</div>
+</div>
+
+<div id="trumbull-tab-apt1r" class="tab-content">
+<div class="photo-grid">
+  <div class="photo-cell"><img src="images/img_322.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-2.jpg"></div>
+  <div class="photo-cell"><img src="images/img_323.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-3.jpg"></div>
+  <div class="photo-cell"><img src="images/img_324.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-4.jpg"></div>
+  <div class="photo-cell"><img src="images/img_325.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-5.jpg"></div>
+  <div class="photo-cell"><img src="images/img_326.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-6.jpg"></div>
+  <div class="photo-cell"><img src="images/img_327.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-7.jpg"></div>
+  <div class="photo-cell"><img src="images/img_328.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-8.jpg"></div>
+  <div class="photo-cell"><img src="images/img_303.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-9.jpg"></div>
+  <div class="photo-cell"><img src="images/img_330.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-10.jpg"></div>
+  <div class="photo-cell"><img src="images/img_331.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-11.jpg"></div>
+  <div class="photo-cell"><img src="images/img_332.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-12.jpg"></div>
+  <div class="photo-cell"><img src="images/img_333.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-13.jpg"></div>
+  <div class="photo-cell"><img src="images/img_334.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-14.jpg"></div>
+  <div class="photo-cell"><img src="images/img_335.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-15.jpg"></div>
+  <div class="photo-cell"><img src="images/img_336.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-16.jpg"></div>
+  <div class="photo-cell"><img src="images/img_337.jpg" alt="57TrubullSt_NewHaven_CT-Apt1R-FloorPlans.jpg"></div>
+</div>
+</div>
+
+<div id="trumbull-tab-apt2r" class="tab-content">
+<div class="photo-grid">
+  <div class="photo-cell"><img src="images/img_338.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-1.jpg"></div>
+  <div class="photo-cell"><img src="images/img_339.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-2.jpg"></div>
+  <div class="photo-cell"><img src="images/img_340.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-3.jpg"></div>
+  <div class="photo-cell"><img src="images/img_341.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-4.jpg"></div>
+  <div class="photo-cell"><img src="images/img_342.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-6.jpg"></div>
+  <div class="photo-cell"><img src="images/img_343.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-7.jpg"></div>
+  <div class="photo-cell"><img src="images/img_344.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-8.jpg"></div>
+  <div class="photo-cell"><img src="images/img_345.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-9.jpg"></div>
+  <div class="photo-cell"><img src="images/img_346.jpg" alt="57TrubullSt_NewHaven_CT-Apt2R-FloorPlans.jpg"></div>
+</div>
+</div>
+
+<div id="trumbull-tab-apt2f" class="tab-content">
+<div class="photo-grid">
+  <div class="photo-cell"><img src="images/img_347.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-1.jpg"></div>
+  <div class="photo-cell"><img src="images/img_348.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-2.jpg"></div>
+  <div class="photo-cell"><img src="images/img_349.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-3.jpg"></div>
+  <div class="photo-cell"><img src="images/img_350.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-4.jpg"></div>
+  <div class="photo-cell"><img src="images/img_351.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-5.jpg"></div>
+  <div class="photo-cell"><img src="images/img_352.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-6.jpg"></div>
+  <div class="photo-cell"><img src="images/img_353.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-7.jpg"></div>
+  <div class="photo-cell"><img src="images/img_354.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-8.jpg"></div>
+  <div class="photo-cell"><img src="images/img_355.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-9.jpg"></div>
+  <div class="photo-cell"><img src="images/img_356.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-11.jpg"></div>
+  <div class="photo-cell"><img src="images/img_357.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-12.jpg"></div>
+  <div class="photo-cell"><img src="images/img_358.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-13.jpg"></div>
+  <div class="photo-cell"><img src="images/img_359.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-14.jpg"></div>
+  <div class="photo-cell"><img src="images/img_360.jpg" alt="57TrubullSt_NewHaven_CT-Apt2F-FloorPlans.jpg"></div>
+</div>
+</div>
+
+<div id="trumbull-tab-apt3" class="tab-content">
+<div class="photo-grid">
+  <div class="photo-cell"><img src="images/img_361.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-1.jpg"></div>
+  <div class="photo-cell"><img src="images/img_362.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-2.jpg"></div>
+  <div class="photo-cell"><img src="images/img_363.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-3.jpg"></div>
+  <div class="photo-cell"><img src="images/img_364.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-4.jpg"></div>
+  <div class="photo-cell"><img src="images/img_365.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-5.jpg"></div>
+  <div class="photo-cell"><img src="images/img_366.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-6.jpg"></div>
+  <div class="photo-cell"><img src="images/img_367.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-7.jpg"></div>
+  <div class="photo-cell"><img src="images/img_368.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-8.jpg"></div>
+  <div class="photo-cell"><img src="images/img_369.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-9.jpg"></div>
+  <div class="photo-cell"><img src="images/img_370.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-10.jpg"></div>
+  <div class="photo-cell"><img src="images/img_371.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-11.jpg"></div>
+  <div class="photo-cell"><img src="images/img_372.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-12.jpg"></div>
+  <div class="photo-cell"><img src="images/img_373.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-13.jpg"></div>
+  <div class="photo-cell"><img src="images/img_374.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-14.jpg"></div>
+  <div class="photo-cell"><img src="images/img_375.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-15.jpg"></div>
+  <div class="photo-cell"><img src="images/img_376.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-16.jpg"></div>
+  <div class="photo-cell"><img src="images/img_377.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-17.jpg"></div>
+  <div class="photo-cell"><img src="images/img_378.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-18.jpg"></div>
+  <div class="photo-cell"><img src="images/img_379.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-19.jpg"></div>
+  <div class="photo-cell"><img src="images/img_380.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-20.jpg"></div>
+  <div class="photo-cell"><img src="images/img_381.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-21.jpg"></div>
+  <div class="photo-cell"><img src="images/img_382.jpg" alt="57TrubullSt_NewHaven_CT-Apt3-FloorPlans.jpg"></div>
+</div>
+</div>
+
+<div id="trumbull-tab-highlights" class="tab-content active">
+<div class="photo-grid">
+  <div class="photo-cell"><img src="images/img_383.jpg" alt="57TrubullSt_NewHaven_CT-Exteriors-1.jpg"></div>
+  <div class="photo-cell"><img src="images/img_384.jpg" alt="57TrubullSt_NewHaven_CT-Exteriors-2.jpg"></div>
+  <div class="photo-cell"><img src="images/img_385.jpg" alt="57TrubullSt_NewHaven_CT-Exteriors-3.jpg"></div>
+  <div class="photo-cell"><img src="images/img_386.jpg" alt="57TrubullSt_NewHaven_CT-Exteriors-5.jpg"></div>
+</div>
+</div>
+
+<footer style="border-top:1px solid rgba(255,255,255,0.1); padding:56px 48px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:32px;">
+  <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4);">Contact</div>
+  <div style="display:flex; gap:48px; flex-wrap:wrap;">
+    <a href="/cdn-cgi/l/email-protection#aec9dccbcfdadddecfcdcbddc0c6eec9c3cfc7c280cdc1c3" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Email</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'"><span class="__cf_email__" data-cfemail="e384918682979093828086908d8ba3848e828a8fcd808c8e">[email&#160;protected]</span> ↗</div>
+    </a>
+    <a href="tel:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Phone</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+    <a href="sms:2036149183" style="text-decoration:none; color:inherit;">
+      <div style="font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:6px;">Text</div>
+      <div style="font-size:0.95rem; color:#fff; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">203-614-9183 ↗</div>
+    </a>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function trumbullSwitchTab(tab) {
+  document.querySelectorAll('#trumbull-view .tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('#trumbull-view .tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('trumbull-tab-' + tab).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+
+<div class="lightbox-overlay" id="trumbull-lightbox" onclick="trumbullCloseLightbox(event)">
+  <button class="lightbox-close" onclick="trumbullCloseLightboxBtn()">✕</button>
+  <button class="lightbox-prev" onclick="trumbullLightboxNav(-1, event)">&#8592;</button>
+  <img id="trumbull-lightbox-img" src="" alt="">
+  <button class="lightbox-next" onclick="trumbullLightboxNav(1, event)">&#8594;</button>
+</div>
+
+<script>
+let trumbullAllPhotos = [];
+let trumbullCurrentIdx = 0;
+
+function trumbullBuildPhotoList() {
+  trumbullAllPhotos = Array.from(document.querySelectorAll('#trumbull-view .photo-cell img')).map(img => img.src);
+}
+
+function trumbullOpenLightbox(src) {
+  trumbullBuildPhotoList();
+  trumbullCurrentIdx = trumbullAllPhotos.indexOf(src);
+  document.getElementById('trumbull-lightbox-img').src = src;
+  document.getElementById('trumbull-lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function trumbullCloseLightbox(e) {
+  if (e.target === document.getElementById('trumbull-lightbox')) {
+    trumbullCloseLightboxBtn();
+  }
+}
+
+function trumbullCloseLightboxBtn() {
+  document.getElementById('trumbull-lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function trumbullLightboxNav(dir, e) {
+  e.stopPropagation();
+  trumbullCurrentIdx = (trumbullCurrentIdx + dir + trumbullAllPhotos.length) % trumbullAllPhotos.length;
+  document.getElementById('trumbull-lightbox-img').src = trumbullAllPhotos[trumbullCurrentIdx];
+}
+
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('trumbull-lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape') trumbullCloseLightboxBtn();
+  if (e.key === 'ArrowLeft') trumbullLightboxNav(-1, e);
+  if (e.key === 'ArrowRight') trumbullLightboxNav(1, e);
+});
+
+document.addEventListener('click', e => {
+  if (e.target.closest('#trumbull-view .photo-cell img')) {
+    trumbullOpenLightbox(e.target.src);
+  }
+});
+</script>
+</div><!-- end trumbull-view -->
+
+
+<script>
+function send(e) { e.preventDefault(); e.target.querySelector("button").style.display="none"; document.getElementById("success").style.display="block";</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var cards = document.querySelectorAll("#home-view .loc-card");
+  cards.forEach(function(card) {
+    if (card.textContent.indexOf("261 Bradley") !== -1) {
+      card.style.cursor = "pointer";
+      var children = card.querySelectorAll("*");
+      children.forEach(function(child) { child.style.pointerEvents = "none"; });
+      card.addEventListener("click", function(e) {
+        showBradley();
+      });
+    }
+  });
+  // 495 Orange Street card handler
+  cards.forEach(function(card) {
+    if (card.textContent.indexOf("495 Orange") !== -1) {
+      card.style.cursor = "pointer";
+      var children = card.querySelectorAll("*");
+      children.forEach(function(child) { child.style.pointerEvents = "none"; });
+      card.addEventListener("click", function(e) {
+        showOrange();
+      });
+    }
+  });
+
+  // 57 Trumbull Street card handler
+  cards.forEach(function(card) {
+    if (card.textContent.indexOf("57 Trumbull") !== -1) {
+      card.style.cursor = "pointer";
+      var children = card.querySelectorAll("*");
+      children.forEach(function(child) { child.style.pointerEvents = "none"; });
+      card.addEventListener("click", function(e) {
+        showTrumbull();
+      });
+    }
+    if (card.textContent.indexOf("265 Orange") !== -1) {
+      card.style.cursor = "pointer";
+      var children = card.querySelectorAll("*");
+      children.forEach(function(child) { child.style.pointerEvents = "none"; });
+      card.addEventListener("click", function(e) {
+        showOrange265();
+      });
+    }
+  });
+});
+
+function showTrumbull() {
+  document.getElementById("home-view").classList.add("hidden");
+  document.getElementById("trumbull-view").classList.add("active");
+  window.scrollTo(0, 0);
+}
+
+function showBradley() {
+  document.getElementById("home-view").classList.add("hidden");
+  document.getElementById("bradley-view").classList.add("active");
+  window.scrollTo(0, 0);
+}
+
+function showOrange() {
+  document.getElementById("home-view").classList.add("hidden");
+  document.getElementById("orange-view").classList.add("active");
+  window.scrollTo(0, 0);
+}
+
+function showOrange265() {
+  document.getElementById("home-view").classList.add("hidden");
+  document.getElementById("orange265-view").classList.add("active");
+  window.scrollTo(0, 0);
+}
+
+function showHome() {
+  document.getElementById("bradley-view").classList.remove("active");
+  document.getElementById("orange-view").classList.remove("active");
+  document.getElementById("orange265-view").classList.remove("active");
+  document.getElementById("trumbull-view").classList.remove("active");
+  document.getElementById("home-view").classList.remove("hidden");
+  document.body.style.overflow = '';
+  window.scrollTo(0, 0);
+}
+</script>
+<script>
+// Swipe support for all lightboxes on mobile
+(function(){
+  function addSwipe(lightboxSelector, prevFn, nextFn, closeFn) {
+    const el = document.querySelector(lightboxSelector);
+    if (!el) return;
+    let startX = 0, startY = 0, distX = 0, distY = 0;
+    el.addEventListener('touchstart', function(e) {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    }, {passive: true});
+    el.addEventListener('touchmove', function(e) {
+      distX = e.touches[0].clientX - startX;
+      distY = e.touches[0].clientY - startY;
+    }, {passive: true});
+    el.addEventListener('touchend', function() {
+      const absX = Math.abs(distX), absY = Math.abs(distY);
+      if (absX > 50 && absX > absY) {
+        if (distX > 0) prevFn();
+        else nextFn();
+      } else if (absY > 80 && absY > absX) {
+        closeFn();
+      }
+      distX = 0; distY = 0;
+    }, {passive: true});
+  }
+
+  // Bradley lightbox swipe
+  addSwipe('#bradley-view .lightbox',
+    function(){ document.querySelector('#bradley-view .lb-prev').click(); },
+    function(){ document.querySelector('#bradley-view .lb-next').click(); },
+    function(){ document.querySelector('#bradley-view .lb-close').click(); }
+  );
+
+  // Orange lightbox swipe
+  addSwipe('#orange-view .lightbox',
+    function(){ document.querySelector('#orange-view .lb-prev').click(); },
+    function(){ document.querySelector('#orange-view .lb-next').click(); },
+    function(){ document.querySelector('#orange-view .lb-close').click(); }
+  );
+
+  // 265 Orange lightbox swipe
+
